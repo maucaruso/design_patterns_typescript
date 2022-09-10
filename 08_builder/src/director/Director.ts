@@ -34,4 +34,13 @@ export class Director {
     this.builder.addWheel(new Wheel(22));
   }
   
+  constructMotorcycle() {
+    this.builder.setVehicleType(VehicleType.MOTORCYCLE);
+    this.builder.setSeats(1);
+    this.builder.setTransmission(Transmission.MANUAL);
+    this.builder.setEngine(new Engine(300));
+    this.builder.addWheel(new Wheel(12));
+    this.builder.addWheel(new Wheel(12));
+  }
+  
 }
