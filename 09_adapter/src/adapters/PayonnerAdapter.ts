@@ -5,7 +5,7 @@ import { Token } from "../utils/token";
 export class PayonnerAdapter implements IPayPalPayment {
   
   constructor(private payonner: Payonner) {
-    console.log("Adaptand o Payonner utilizando métodos e padrões do PayPal");
+    console.log("Adaptando o Payonner utilizando métodos e padrões do PayPal");
   }
   
   authToken(): Token {
