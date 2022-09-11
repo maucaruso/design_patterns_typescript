@@ -16,7 +16,7 @@ export class CheckPermissionMiddleware extends Middleware {
     
     if (users[0].permission === PermissionType.ADMIN) {
       console.log(chalk.blue("Seja bem-vindo administrator!"));
-      return true;
+      return this.checkNext(email, password);
     }
     
     console.log(chalk.blue("Seja bem-vindo usuário!"));
